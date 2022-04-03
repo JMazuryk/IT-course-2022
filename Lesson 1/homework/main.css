@@ -1,0 +1,28 @@
+body {
+    background: darkorange;
+}
+
+img {
+    width: 400px;
+}
+h1 {
+    background: darkorange;
+    color: cornflowerblue;
+}
+
+h2{
+    background: greenyellow;
+    color: aquamarine;
+}
+
+p {
+    background:cornflowerblue;
+
+}
+ul {
+    background: crimson;
+}
+
+li {
+    background: cornflowerblue;
+}
