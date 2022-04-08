@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+
+}
+
+.box {
+    width: 1300px;
+    height: 650px;
+    background: cornflowerblue;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+}
+
+.block {
+    width: 600px;
+    height: 150px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.image {
+    width: 130px;
+    height: 100%;
+}
+
+.txt {
+    width: 500px;
+    height: 70px;
+    font-size: 30px;
+    font-family: Arial;
+    color: darkorange;
+    padding-top: 25px;
+    box-sizing: border-box;
+
+}
+
+.title {
+    width: 450px;
+    height: 60px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+}
+
+.fa-star-half-stroke {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #162029;
+
+}
+
+.fa-globe {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #162029;
+
+}
+
+.fa-building-columns {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #162029;
+}
+
+.fa-code {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #162029;
+}
+
+.fa-font-awesome {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #162029;
+}
+
+.fa-floppy-disk {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #162029;
+}
