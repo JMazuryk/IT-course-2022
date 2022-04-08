@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+.box {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.card {
+    width: 350px;
+    height: 450px;
+    border: 1px solid midnightblue;
+    margin: 20px;
+
+}
+
+.heading {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 25px;
+}
+
+.text {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.link {
+    width: 250px;
+    height: 50px;
+    border: 1px solid midnightblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.round {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    top: -40px;
+    left: 135px;
+
+}
+
+.fa-umbrella-beach {
+    font-size: 40px;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+.fa-mug-saucer {
+    font-size: 40px;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.fa-guitar {
+    font-size: 40px;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
