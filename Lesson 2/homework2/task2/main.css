@@ -42,7 +42,6 @@ body {
 .link {
     width: 70%;
     height: 60px;
-    display: block;
     font-size: 20px;
     display: flex;
     justify-content: center;
