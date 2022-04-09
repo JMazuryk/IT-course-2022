@@ -50,6 +50,7 @@ body {
 .round {
     width: 90px;
     height: 90px;
+    background: white;
     border-radius: 50%;
     border: 1px solid black;
     position: relative;
