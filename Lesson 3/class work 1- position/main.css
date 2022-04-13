@@ -1,0 +1,41 @@
+/*.box {*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    background: #35cd9f;*/
+/*    margin: 0;*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*}*/
+/*.box > li {*/
+/*    margin-left: 20px;*/
+/*}*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: #35cd9f;
+    margin: 10px;
+}
+/*.box:nth-child(2) {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background: crimson;*/
+/*    position: absolute;*/
+/*    top: 30px;*/
+/*}*/
+
+/*.box:nth-child(2) {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background: crimson;*/
+/*    position: relative;*/
+/*}*/
+.inner {
+    width: 100px;
+    height: 100px;
+    background: crimson;
+
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}

@@ -1,0 +1,21 @@
+/*ol.sun > li {*/
+/*    background: blue;*/
+/*}*/
+
+/*.benefies-1 li {*/
+/*    background: #35cd9f ;*/
+/*}*/
+
+.benefies-1 {
+    background: crimson;
+
+}
+
+.benefies-2 {
+    width: 200px;
+
+}
+
+.benefies-1.benefies-2 {
+    background: coral;
+}

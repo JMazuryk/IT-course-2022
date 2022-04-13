@@ -1,0 +1,20 @@
+/*.box {*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*    background: #35cd9f;*/
+/*    margin: 10px;*/
+/*}*/
+/*.box:nth-child(3n+2) {*/
+/*    background: orange;*/
+/*}*/
+
+ul:nth-child(even) > li:nth-child(even) {
+    background: yellow;
+}
+li {
+    transition: 1000ms;
+}
+li:hover {
+    background: #35cd9f;
+    transition: 500ms;
+}
