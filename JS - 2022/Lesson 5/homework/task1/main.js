@@ -1,3 +1,6 @@
+
+// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+//     Вивести кожну змінну за допомогою: console.log , alert, document.write
 // let a1 = 'hello';
 // let a2 = 'owu';
 // let a3 = 'com';
@@ -84,6 +87,10 @@
 // document.write(a13);
 
 
+//- Створити об'єкт book з наступними полями :
+// назва, (тип string)
+// кількість сторінок (числовий тип),
+// жанр (string)
 //
 // let book1 = {
 //     name: 'Chanel',
@@ -93,6 +100,11 @@
 //
 // console.log(book);
 
+// - Створити об'єкт book з наступними полями :
+// назва, (тип string)
+// кількість сторінок (числовий тип),
+// жанр (string)
+// автори (тип - масив, кожен елемент масиву - це стрінга)
 // let book2 = {
 //     name: 'Chanel',
 //     pages: 450,
@@ -106,6 +118,8 @@
 // console.log(book2);
 
 
+//- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person (Не об'єкт, просто за допомоги конкатенації)
+//
 // let firstName = 'Julia';
 // let middleName = 'Romanivna';
 // let lastName = 'Mazuryk';
@@ -119,6 +133,8 @@
 //console.log(person);
 
 
+// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
+//
 // let firstName = prompt( 'enter your first name') ;
 // let middleName = prompt( 'enter your middle name') ;
 // let lastName = prompt( 'enter your last name') ;
@@ -126,6 +142,8 @@
 // console.log(person)
 
 
+// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+//     let a = 100; let b = '100'; let c = true;
 // let a = 100;
 // let b = '100';
 // let c = true;
@@ -134,6 +152,8 @@
 // console.log(typeof c);
 
 
+// - Створити масив об'єктів з назвою books з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+//
 // let books = [
 //     {
 //         name: 'Chanel',
