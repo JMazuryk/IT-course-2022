@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--<video src="" id="videoplayer"></video>-->
+
+<div class="users"></div>
+<div class="chosen"></div>
+<script>
+//     BOM - об'єктна модель браузера;
+//      window.location.reload();
+//
+//     navigator.mediaDevices.getUserMedia({video: true})
+//         .then(stream => {
+//             let videoplayer = document.getElementById('videoplayer');
+//             videoplayer.srcObject = stream;
+//             videoplayer.play();
+//         });
+//
+//     navigator.geolocation.getCurrentPosition( position => {
+//         console.log(position);
+//     })
+//
+//
+//     let user = {name:'Dolomitu'};
+//     // localStorage.setItem('qqq',user);
+//     // let user2 = '{"name":"Dolomitu"}';//JSON
+//     // console.log(user2);
+//     // let user3 = JSON.stringify(user); //все перетворює на стрінгу
+//     // console.log(user3);
+//     // let user4 = JSON.parse(user3); //перетворили назад
+//     // console.log(user4);
+//
+//     localStorage.setItem('chosenOne',JSON.stringify(user));
+//     let J = localStorage.getItem('chosenOne');
+//     let o = JSON.parse(J);
+//     console.log(o);
+//
+//     let users = [
+//         {name: 'vasya', age: 31, status: false},
+//         {name: 'petya', age: 30, status: true},
+//         {name: 'kolya', age: 29, status: true},
+//         {name: 'olya', age: 28, status: false},
+//         {name: 'max', age: 30, status: true},
+//         {name: 'anya', age: 31, status: false},
+//         {name: 'oleg', age: 28, status: false},
+//         {name: 'andrey', age: 29, status: true},
+//         {name: 'masha', age: 30, status: true},
+//         {name: 'olya', age: 31, status: false},
+//         {name: 'max', age: 31, status: true}
+//     ];
+//
+//     let userBlock = document.getElementsByClassName('users')[0];
+//
+//     for (const user of users) {
+//         let userDiv = document.createElement('div');
+//         userDiv.innerText = user.name;
+//         userDiv.onclick = function () {
+//             localStorage.setItem('user', JSON.stringify(user));
+//         }
+//
+//         userBlock.append(userDiv);
+//    }
+// //буде показувати,який об'єкт переглядали останнім
+//
+//     let userJSON = localStorage.getItem('user');
+//     let chosen = JSON.parse(userJSON);
+//     if (chosen) {
+//         let chosenBlock = document.getElementsByClassName('chosen')[0];
+//         chosenBlock.innerText = chosen.age + ' ' + chosen.name;
+//     }
+
+// //     let users = [
+// //         {name: 'vasya', age: 31, status: false},
+// //         {name: 'petya', age: 30, status: true},
+// //         {name: 'kolya', age: 29, status: true},
+// //         {name: 'olya', age: 28, status: false},
+// //         {name: 'max', age: 30, status: true},
+// //         {name: 'anya', age: 31, status: false},
+// //         {name: 'oleg', age: 28, status: false},
+// //         {name: 'andrey', age: 29, status: true},
+// //         {name: 'masha', age: 30, status: true},
+// //         {name: 'olya', age: 31, status: false},
+// //         {name: 'max', age: 31, status: true}
+// //     ];
+// //
+// // let arrayJSON = localStorage.getItem('users');
+// // console.log(arrayJSON);
+// //
+// // let userObjects = JSON.parse(arrayJSON);
+// // if (usersObjects){
+// //     userObjects.pop();
+// //     localStorage.setItem('users',JSON.stringify(userObjects));
+// // }
+// // localStorage.clear()
+//
+// //sessionStorage
+//
+// // document.cookie = 'name=qqq';
+// // console.log(document.cookie);
+// // document.cookie = 'id=555';
+// // console.log(document.cookie);
+// // document.cookie = 'max-age=14546868'; //секунди скільки будуть існувати кукі
+// // console.log(document.cookie);
+// // document.cookie = 'path=/'; //шлях
+//
+// // let cookies = document.cookie.split(';');
+// // // console.log(cookies);
+// //
+// // let obj = {};
+// // for (let i = 0; i < cookies.length; i++) {
+// //     let compositeCookie = cookies[i];
+// //     let cookieTuple = compositeCookie.split('=');
+// //     let key = cookieTuple[0].trim();
+// //     let value = cookieTuple[1];
+// //     obj[key] = value;
+// //
+// // }
+// // console.log(obj);
+//
+// let cookies = document.cookie.split(';');
+// // console.log(cookies);
+//
+// let obj = {};
+// for (let i = 0; i < cookies.length; i++) {
+//     let cookieTuple = cookies[i].split('=');
+//     obj[cookieTuple[0].trim()] = cookieTuple[1];
+// }
+// console.log(obj);
+
+
+//створення обєкту
+//EJS6
+
+// let name = 'taras';
+// let age = 31;
+// // let user = {name:name,age:age};
+// let user = {name,age};
+// console.log(user);
+//замість foo: можна відразу записати, але це тільки в об'єкті
+// let name = 'Taras';
+// let age = 31;
+// let user = {
+//     name,
+//     age,
+//     foo() {
+//         return 'bar';
+//     }
+// };
+// console.log(user);
+//
+//Деструктиризація обєкту
+
+// let user = {name: 'vasay', age: 31};
+// let name = user.name;
+
+// let {name, wife: {name: wifeName}, wife} = {name: 'vasay', age: 31, wife: {name: 'olya'}};
+// console.log(name, wife, wifeName);
+
+//Cпред як скопіювати обєкт-shall copy
+
+// let user = {name: 'vasay', age: 31, skills: ['asd', 'qwe']};
+// let user2 = {...user};
+// let user2 = {...user,skills: [...user.skills]};
+//
+// console.log(user === user2);
+// user2.name = 'kokos';
+// user2.skills[2] = 'yywfygfw';
+// console.log(user);
+// console.log(user2);
+//
+// console.log(user.skills === user2.skills);
+// let arr = [1, 2, 3];
+// let arrClone = [0,0,0,0,...arr];
+// console.log(arrClone);
+
+//Деструктиризація масиву
+
+// let arr = [1, 2, 3];
+// let number1 = arr[0];
+// let number3 = arr[2];
+
+// let [number1, , number3] = [11, 22, 33];
+// console.log(number1);
+// console.log(number3);
+
+// function foo({name}) {
+//     console.log(name);
+//
+// }
+//
+// foo({name: 'asd', age: 123});
+//
+// function bar([a,,c]) {
+//
+// }
+//
+// bar([11, 22, 33]);
+
+</script>
+</body>
+</html>

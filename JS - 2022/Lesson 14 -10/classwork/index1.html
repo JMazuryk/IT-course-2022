@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+show users with status true
+<input type="radio" name="status" value="true">
+<br>
+show users with status false
+<input type="radio" name="status" value="false">
+
+<div class="users"></div>
+<script>
+
+    let users = [
+        {gender: 'm', name: 'vasya', age: 31, status: false},
+        {gender: 'm', name: 'petya', age: 30, status: true},
+        {gender: 'm', name: 'kolya', age: 29, status: true},
+        {gender: 'f', name: 'olya', age: 28, status: false},
+        {gender: '', name: 'max', age: 30, status: true},
+        {gender: '', name: 'anya', age: 31, status: false},
+        {gender: '', name: 'oleg', age: 28, status: false},
+        {gender: '', name: 'andrey', age: 29, status: true},
+        {gender: '', name: 'masha', age: 30, status: true},
+        {gender: '', name: 'olya', age: 31, status: false},
+        {gender: '', name: 'max', age: 31, status: true}
+    ];
+
+    function buildUI(users) {
+        let userBlock = document.getElementsByClassName('users')[0];
+        userBlock.innerHTML = '';
+        for (const user of users) {
+            let div = document.createElement('div');
+            div.innerText = user.name + ' ' + user.status;
+            userBlock.appendChild(div);
+        }
+    }
+
+    let inputs = document.getElementsByTagName('input');
+    for (const input of inputs) {
+        input.onclick = function () {
+            // console.log(this.value);
+            let status = this.value === 'true';
+            // console.log(status);
+            if (status) {
+                // console.log(users.filter(value => value.status));
+                buildUI(users.filter(value => value.status));
+            } else {
+                // console.log(users.filter(value => !value.status));
+                buildUI(users.filter(value => !value.status));
+            }
+        };
+    }
+
+</script>
+
+
+</body>
+</html>

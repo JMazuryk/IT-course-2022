@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!--    <style>-->
+<!--        .target{-->
+<!--            width: 200px;-->
+<!--            height: 200px;-->
+<!--            border: 1px solid green;-->
+<!--            background: aquamarine;-->
+<!--        }-->
+
+<!--    </style>-->
+</head>
+<body>
+
+<!--<div class="target"></div>-->
+<!--<input type="text" id="inp1">-->
+<!--<hr>-->
+<!--<form action="" name="f1">-->
+<!--    <input type="text" name="username">-->
+<!--    <input type="email" name="email">-->
+<!--    <button>send</button>-->
+<!--</form>-->
+
+
+<script>
+
+// це звернення до всього псевдомасиву DIV
+//  console.log(document.getElementsByClassName('target'));
+//
+// щоб звернутися до 1-го елементу псевдомасиву
+//     let list = document.getElementsByClassName('target');
+//     console.log(list[0]);
+// або
+// console.log(document.getElementsByClassName('target')[0]);
+// або
+// let target = document.getElementsByClassName('target')[0];
+// console.log(target);
+// target.onclick = function (){
+//     console.log('click');
+// };
+//
+// let target = document.getElementsByClassName('target')[0];
+// console.log(target);
+// target.onclick = function (e){
+//     console.log(e);
+// };
+// // якщо створити новий скріпт і закинути туди подію,то вона замінить/перевизначить попередню
+// // так робити не можна.
+// // тому потрібно додати слухача подій - addEventListener  і додавати події скілки завгодно, і не буде перевизначень
+//
+// target.addEventListener('click',function (e){
+//     console.log('1');
+// // });
+// target.addEventListener('click',function (e){
+//     console.log('2');
+// });
+
+// коли одна подія ініціалізує/визначає іншу
+// target.addEventListener('mousedown',function (emd){
+//     this.addEventListener('mousemove',
+//         function (emm) {
+//             console.log('move');
+//         })
+// })
+// target.onmouseup = function (){
+//     console.log('up');
+//     target.onmousemove = null;
+// }
+//
+// let click_count = 0;
+//
+// function myClick(event) {
+//     click_count++;
+//     if(click_count === 50) {
+//         // to remove
+//         canvas.removeEventListener('click', myClick);
+//     }
+// }
+//
+// let input = document.getElementById('inp1');
+// input.oninput = function (e){
+//     console.log(e)
+//     // console.log(this.value);
+// }
+
+// input.onkeyup = function (e){
+//     let audio = new Audio("./Adele.mp3");
+//
+//     audio.oncanplaythrough = function(){
+//         audio.play();
+// }};
+//
+// let f1 = document.forms.f1;
+// f1.onsubmit = function (e){
+//     e.preventDefault()
+//     let username = f1.username.value;
+//     let email = f1.email.value;
+//     let user = {
+//         username: username,
+//         email: email
+//           };
+//     console.log(user);
+//     f1.username.value ='';
+//     f1.email.value ='';
+//
+//     // console.log('asafasfa');
+//     // let username = f1.username.value;
+//     // console.log(username);
+//     // console.log(this.email.value);
+//     // console.log(e.target.email.value);
+//     // console.log(this.username.value);
+//
+// };
+// // не буде перезавантажувати сторінку через прівендефолт
+
+</script>
+
+</body>
+</html>
