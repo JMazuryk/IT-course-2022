@@ -1,6 +1,6 @@
 // Agenda
 // 1. Звернення до елементів псевдомасиву
-// 2. івенти -сclick...
+// 2. івенти -oclick...
 // 3.Add Eventlistener
 // 4.input+music
 // 5.forms

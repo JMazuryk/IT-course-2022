@@ -12,6 +12,7 @@
 // history
 // location + url
 // stream
+// деструктиризація
 
 
 

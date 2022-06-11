@@ -58,36 +58,36 @@
 //
 // document.body.appendChild(link)
 //
-// const cars = [
-//   { producer: 'Chevrolet', model: 'Lacceti' },
-//   { producer: 'Mazda', model: 'CX-7' },
-//   { producer: 'Audi', model: 'RS6' },
-//   { producer: 'Opel', model: 'Vectra' },
-//   { producer: 'Nissan', model: 'Quash' },
-// ];
-//
-// for (const car of cars) {
-//   const red = Math.random() * 255;
-//   const green = Math.random() * 255;
-//   const blue = Math.random() * 255;
-//
-//   const carLink = `https://uk.lmgtfy.app/#gsc.tab=0&gsc.q=${car.model}`;
-//
-//   const carDiv = document.createElement('div');
-//   const carLinkElemnt = document.createElement('a');
-//   carLinkElemnt.innerText = `Google it`;
-//   carLinkElemnt.setAttribute('href', carLink);
-//   carLinkElemnt.setAttribute('target', '_blank');
-//
-//   carDiv.innerHTML =
-//     `<hr/>
-// <h2 style="color: rgb(${red}, ${green}, ${blue})">${car.producer}</h2>
-//     <p>${car.model}</p>`
-//
-//   carDiv.appendChild(carLinkElemnt)
-//
-//   document.body.appendChild(carDiv);
-// }
+const cars = [
+  { producer: 'Chevrolet', model: 'Lacceti' },
+  { producer: 'Mazda', model: 'CX-7' },
+  { producer: 'Audi', model: 'RS6' },
+  { producer: 'Opel', model: 'Vectra' },
+  { producer: 'Nissan', model: 'Quash' },
+];
+
+for (const car of cars) {
+  const red = Math.random() * 255;
+  const green = Math.random() * 255;
+  const blue = Math.random() * 255;
+
+  const carLink = `https://uk.lmgtfy.app/#gsc.tab=0&gsc.q=${car.model}`;
+
+  const carDiv = document.createElement('div');
+  const carLinkElemnt = document.createElement('a');
+  carLinkElemnt.innerText = `Google it`;
+  carLinkElemnt.setAttribute('href', carLink);
+  carLinkElemnt.setAttribute('target', '_blank');
+
+  carDiv.innerHTML =
+    `<hr/>
+<h2 style="color: rgb(${red}, ${green}, ${blue})">${car.producer}</h2>
+    <p>${car.model}</p>`
+
+  carDiv.appendChild(carLinkElemnt)
+
+  document.body.appendChild(carDiv);
+}
 
 const divka = document.getElementById('my_div');
 const button = document.getElementById('btn');
