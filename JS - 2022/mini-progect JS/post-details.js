@@ -4,7 +4,6 @@
 // Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)
 
 
-
 const post = document.getElementById('post');
 
 fetch('https://jsonplaceholder.typicode.com/posts')
@@ -12,7 +11,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     .then(value => {
         for (const item of value) {
             const wrapPost = document.createElement('ul');
-             wrapPost.innerHTML = `<li>userId: ${item.userId}</li>
+            wrapPost.innerHTML = `<li>userId: ${item.userId}</li>
                                   <li>id: ${item.id}</li>
                                   <li>title: ${item.title}</li>
                                   <li>body: ${item.body}</li> `;
@@ -23,6 +22,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                 .then(value => {
                     for (const comment of value) {
                         const wrapComment = document.createElement('ul');
+                        wrapComment.style.margin = '10px';
                         wrapPost.appendChild(wrapComment);
                         if (item.id === comment.postId) {
                             const dataComment = document.createElement('li');
