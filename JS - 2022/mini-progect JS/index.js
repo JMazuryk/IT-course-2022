@@ -4,28 +4,30 @@
 // 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html, которая имеет детальную информацию про объект на который кликнули
 // Стилизация : index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.
 
-const user = document.getElementById('user');
-user.style.width = '450px';
-user.style.flexWrap = 'wrap';
-user.style.display = 'flex';
+const userStyle = document.getElementsByClassName('users')[0];
+const innerStyle = document.getElementsByClassName('inner')[0];
 
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(value => value.json())
     .then(value => {
-        for (const item of value) {
-            const datauser = document.createElement('li');
-            datauser.style.margin = '20px';
-            datauser.innerText = `id: ${item.id}
-                                  name: ${item.name}   
-                                  `
-            user.appendChild(datauser);
+        for (const user of value) {
+            const userDiv = document.createElement('div');
+            userDiv.style.padding = '10px';
+            userDiv.innerText = `id: ${user.id}\n name: ${user.name}\n`;
 
             const button = document.createElement('button');
             button.innerText = 'click';
-            datauser.appendChild(button);
             button.onclick = () => {
+                const key = 'userArray';
+                const userArray = JSON.parse(localStorage.getItem(key)) || [];
+                userArray.push(user);
+                localStorage.setItem(key, JSON.stringify(userArray));
+                button.disabled = true;
                 location.href = 'user-details.html';
             }
+            userDiv.append(button);
+            innerStyle.append(userDiv);
+            userStyle.append(innerStyle);
         }
     });
 
